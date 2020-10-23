@@ -17,23 +17,17 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function getData (e){
-    e.preventDefault();
-    let data = axios.get(`https://www.reddit.com/r/RocketLeagueEsports.json`)
-    console.log(data)
-}
 
-
-export default function Posts() {
+export default function Posts(props) {
 
 
   const classes = useStyles();
- 
+  
 
   return (
     <div className={classes.root}>
-      <Paper elevation={2}>Hello Whirl</Paper>
-      <Button onClick={getData}>Get Data</Button >
+      <Paper elevation={2}>Hello I am a result</Paper>
+    
     </div>
   );
 }
