@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route} from 'react-router-dom';
 import App from './App'
+import Posts from './components/Posts'
+import UI from './components/UI'
 
 
 
@@ -9,7 +11,8 @@ import App from './App'
 ReactDOM.render(
   <BrowserRouter>
   <Switch>
-    <Route path='/' component={App}/>
+    {/* <UI/> */}
+    <Route path="/" component={Posts}/>
   </Switch>
   </BrowserRouter>,
   document.getElementById('root')
